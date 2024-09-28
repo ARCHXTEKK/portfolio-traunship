@@ -1,0 +1,139 @@
+.footer {
+  position: relative;
+  background: $black;
+  color: $white;
+  padding-top: 270px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
+.footer::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: $white;
+  top: -30%;
+  height: 360px;
+  width: 100%;
+  clip-path: ellipse(60% 120px);
+  overflow: hidden;
+}
+
+.footer__nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer__nav-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 1px 10px 0 rgba(255, 255, 255, 0);
+  &:hover {
+    box-shadow: 0 1px 10px 0 rgba(255, 255, 255, 1);
+  }
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__top-title {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.footer__contacts {
+  max-width: 350px;
+}
+
+.footer__top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer__links {
+  max-width: 150px;
+}
+
+.footer__news {
+  width: 100%;
+  max-width: 450px;
+}
+
+.footer__news-form {
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 40px 27px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.footer__news-label {
+  font-size: 18px;
+  line-height: 1.39;
+  color: $white;
+}
+
+.footer__news-actions {
+  margin-top: 24px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.footer__news-input {
+  display: block;
+  padding: 14px 19px;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.footer__news-input::placeholder {
+  color: $gray;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+.footer__form-btn {
+  max-width: 90px;
+  width: 100%;
+  height: max-content;
+}
+
+.footer__divider {
+  display: block;
+  margin-block: 80px 40px;
+  margin-inline: auto;
+
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
+
+  background-color: $white;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyrights {
+  font-size: 12px;
+  color: $white;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}

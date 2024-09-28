@@ -1,0 +1,36 @@
+body {
+  color: $black;
+  background: $white;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+input,
+input:focus {
+  border: none;
+  outline: none;
+}
