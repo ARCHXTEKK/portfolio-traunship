@@ -14,7 +14,21 @@
   })
   <main>
     <section class="hero">
-      <div class="hero__img" style="background-image: url('../assets/images/hero.jpg');"></div>
+      <div class="hero__img" style="
+      background-image: image-set(
+        url('assets/images/hero/hero.avif') type('image/avif') 1x,
+        url('assets/images/hero/hero@2x.avif') type('image/avif') 2x,
+        url('assets/images/hero/hero@3x.avif') type('image/avif') 3x,
+    
+        url('assets/images/hero/hero.jpg') type('image/jpeg') 1x,
+        url('assets/images/hero/hero@2x.jpg') type('image/jpeg') 2x,
+        url('assets/images/hero/hero@3x.jpg') type('image/jpeg') 3x,
+    
+        url('assets/images/hero/hero.webp') type('image/webp') 1x,
+        url('assets/images/hero/hero@2x.webp') type('image/webp') 2x,
+        url('assets/images/hero/hero@3x.webp') type('image/webp') 3x
+      );
+    "></div>
       <div class="container ">
         <button class="hero__player">
           <img src="./assets/vectors/triangle.svg" alt="">
@@ -110,7 +124,23 @@
     <section class="interview">
       <div class="container interview__container">
         <div class="interview__img-wrapper">
-          <img src="./assets/images/interview.jpg" alt="black hole" class="interview__img">
+          <picture>
+            <source srcset="
+            ./assets/images/interview/interview.avif,
+            ./assets/images/interview/interview@2x.avif 2x,
+            ./assets/images/interview/interview@3x.avif 3x,
+            ">
+            <source srcset="
+            ./assets/images/interview/interview.webp,
+            ./assets/images/interview/interview@2x.webp 2x,
+            ./assets/images/interview/interview@3x.webp 3x,
+            ">
+            <img srcset="
+            ./assets/images/interview/interview.jpg,
+            ./assets/images/interview/interview@2x.jpg 2x,
+            ./assets/images/interview/interview@3x.jpg 3x,
+            " alt="black hole" class="interview__img">
+          </picture>
         </div>
 
         <div class="interview__content">
@@ -122,7 +152,13 @@
               pretium mollis ac id mauris eget.</p>
           </blockquote>
           <div class="interview__author">
-            <img src="./assets/images/interview-avatar.jpg" alt="" class="interview__author-avatar">
+            <picture>
+              <img srcset="
+              ./assets/miniatures/interview/interview-avatar.jpg 1x,
+              ./assets/miniatures/interview/interview-avatar@2x.jpg 2x,
+              ./assets/miniatures/interview/interview-avatar@3x.jpg 3x,
+              " alt="" class="interview__author-avatar">
+            </picture>
             <div class="interview__author-info">
               Milon Ask
               <br>
@@ -145,7 +181,23 @@
 
         <ul class="features__list">
           <li class="features__list-el">
-            <img src="./assets/images/features-1.jpg" alt="" class="features__list-img">
+            <picture>
+              <source srcset="
+              ./assets/images/features/features-1.avif,
+              ./assets/images/features/features-1@2x.avif 2x,
+              ./assets/images/features/features-1@3x.avif 3x,
+              ">
+              <source srcset="
+              ./assets/images/features/features-1.webp,
+              ./assets/images/features/features-1@2x.webp 2x,
+              ./assets/images/features/features-1@3x.webp 3x,
+              ">
+              <img srcset="
+              ./assets/images/features/features-1.jpg,
+              ./assets/images/features/features-1@2x.jpg 2x,
+              ./assets/images/features/features-1@3x.jpg 3x,
+              " alt="black hole" class="features__list-img">
+            </picture>
             <div class="features__list-content">
               <h3 class="features__list-title">
                 Million pounds of thrust
@@ -159,7 +211,23 @@
             </div>
           </li>
           <li class="features__list-el">
-            <img src="./assets/images/features-2.jpg" alt="" class="features__list-img">
+            <picture>
+              <source srcset="
+              ./assets/images/features/features-2.avif,
+              ./assets/images/features/features-2@2x.avif 2x,
+              ./assets/images/features/features-2@3x.avif 3x,
+              ">
+              <source srcset="
+              ./assets/images/features/features-2.webp,
+              ./assets/images/features/features-2@2x.webp 2x,
+              ./assets/images/features/features-2@3x.webp 3x,
+              ">
+              <img srcset="
+              ./assets/images/features/features-2.jpg,
+              ./assets/images/features/features-2@2x.jpg 2x,
+              ./assets/images/features/features-2@3x.jpg 3x,
+              " alt="black hole" class="features__list-img">
+            </picture>
             <div class="features__list-content">
               <h3 class="features__list-title">
                 More than 1,300 missions
@@ -173,7 +241,23 @@
             </div>
           </li>
           <li class="features__list-el">
-            <img src="./assets/images/features-3.jpg" alt="" class="features__list-img">
+            <picture>
+              <source srcset="
+              ./assets/images/features/features-3.avif,
+              ./assets/images/features/features-3@2x.avif 2x,
+              ./assets/images/features/features-3@3x.avif 3x,
+              ">
+              <source srcset="
+              ./assets/images/features/features-3.webp,
+              ./assets/images/features/features-3@2x.webp 2x,
+              ./assets/images/features/features-3@3x.webp 3x,
+              ">
+              <img srcset="
+              ./assets/images/features/features-3.jpg,
+              ./assets/images/features/features-3@2x.jpg 2x,
+              ./assets/images/features/features-3@3x.jpg 3x,
+              " alt="black hole" class="features__list-img">
+            </picture>
             <div class="features__list-content">
               <h3 class="features__list-title">
                 Atlas launched Friendship
@@ -187,7 +271,23 @@
             </div>
           </li>
           <li class="features__list-el">
-            <img src="./assets/images/features-4.jpg" alt="" class="features__list-img">
+            <picture>
+              <source srcset="
+              ./assets/images/features/features-4.avif,
+              ./assets/images/features/features-4@2x.avif 2x,
+              ./assets/images/features/features-4@3x.avif 3x,
+              ">
+              <source srcset="
+              ./assets/images/features/features-4.webp,
+              ./assets/images/features/features-4@2x.webp 2x,
+              ./assets/images/features/features-4@3x.webp 3x,
+              ">
+              <img srcset="
+              ./assets/images/features/features-4.jpg,
+              ./assets/images/features/features-4@2x.jpg 2x,
+              ./assets/images/features/features-4@3x.jpg 3x,
+              " alt="black hole" class="features__list-img">
+            </picture>
             <div class="features__list-content">
               <h3 class="features__list-title">
                 Separate spacecraft
@@ -220,7 +320,23 @@
         </div>
         <div class="blog__cards">
           <div class="blog__cards-card blog__cards-card--active">
-            <img src="./assets/images/blog-1.jpg" alt="" class="blog__card-img">
+            <picture>
+              <source srcset="
+              ./assets/images/blog/blog-1.avif,
+              ./assets/images/blog/blog-1@2x.avif 2x,
+              ./assets/images/blog/blog-1@3x.avif 3x,
+              ">
+              <source srcset="
+              ./assets/images/blog/blog-1.webp,
+              ./assets/images/blog/blog-1@2x.webp 2x,
+              ./assets/images/blog/blog-1@3x.webp 3x,
+              ">
+              <img srcset="
+              ./assets/images/blog/blog-1.jpg,
+              ./assets/images/blog/blog-1@2x.jpg 2x,
+              ./assets/images/blog/blog-1@3x.jpg 3x,
+              " alt="black hole" class="blog__card-img">
+            </picture>
             <div class="blog__cards-content">
               <h3 class="blog__cards-title">
                 “Rocket lab boots its space system”
@@ -234,7 +350,23 @@
             </div>
           </div>
           <div class="blog__cards-card">
-            <img src="./assets/images/blog-2.jpg" alt="" class="blog__card-img">
+            <picture>
+              <source srcset="
+              ./assets/images/blog/blog-2.avif,
+              ./assets/images/blog/blog-2@2x.avif 2x,
+              ./assets/images/blog/blog-2@3x.avif 3x,
+              ">
+              <source srcset="
+              ./assets/images/blog/blog-2.webp,
+              ./assets/images/blog/blog-2@2x.webp 2x,
+              ./assets/images/blog/blog-2@3x.webp 3x,
+              ">
+              <img srcset="
+              ./assets/images/blog/blog-2.jpg,
+              ./assets/images/blog/blog-2@2x.jpg 2x,
+              ./assets/images/blog/blog-2@3x.jpg 3x,
+              " alt="black hole" class="blog__card-img">
+            </picture>
             <div class="blog__cards-content">
               <h3 class="blog__cards-title">
                 “NASA’s big rocket misses deadline”
@@ -256,7 +388,13 @@
         <h2 class="hidden">reviews</h2>
         <ul class="reviews__list">
           <li class="reviews__list-el">
-            <img src="./assets/images/reviews-1.jpg" alt="" class="reviews__list-img">
+            <picture>
+              <img srcset="
+              ./assets/miniatures/reviews/reviews-1.jpg,
+              ./assets/miniatures/reviews/reviews-1@2x.jpg 2x,
+              ./assets/miniatures/reviews/reviews-1@3x.jpg 3x,
+              " alt="" class="reviews__list-img">
+            </picture>
             <blockquote>
               <p class="reviews__list-text">I brought a rocket for my son in his 14th birthday. I liked their service.
                 Love it.</p>
@@ -269,7 +407,13 @@
             </p>
           </li>
           <li class="reviews__list-el">
-            <img src="./assets/images/reviews-2.jpg" alt="" class="reviews__list-img">
+            <picture>
+              <img srcset="
+              ./assets/miniatures/reviews/reviews-2.jpg,
+              ./assets/miniatures/reviews/reviews-2@2x.jpg 2x,
+              ./assets/miniatures/reviews/reviews-2@3x.jpg 3x,
+              " alt="" class="reviews__list-img">
+            </picture>
             <blockquote>
               <p class="reviews__list-text">They delivered my custom rocket as fast as the rocket itself. Mindblowing.
                 Love it.</p>
@@ -282,7 +426,13 @@
             </p>
           </li>
           <li class="reviews__list-el">
-            <img src="./assets/images/reviews-3.jpg" alt="" class="reviews__list-img">
+            <picture>
+              <img srcset="
+              ./assets/miniatures/reviews/reviews-3.jpg,
+              ./assets/miniatures/reviews/reviews-3@2x.jpg 2x,
+              ./assets/miniatures/reviews/reviews-3@3x.jpg 3x,
+              " alt="" class="reviews__list-img">
+            </picture>
             <blockquote>
               <p class="reviews__list-text">I found awesome customer service from them. They fixed my rocket within a
                 day.
