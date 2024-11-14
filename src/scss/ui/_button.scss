@@ -15,6 +15,12 @@
   display: block;
 
   cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $orange-light;
+  }
 }
 
 .button--outline {
@@ -22,4 +28,11 @@
   color: $white;
   background: transparent;
   padding: 10px;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    color: $black;
+    background-color: $white;
+  }
 }

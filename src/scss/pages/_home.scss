@@ -51,6 +51,12 @@
   margin-inline: auto;
 
   margin-bottom: 40px;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $orange-light;
+  }
 }
 
 .hero__title {
@@ -151,7 +157,7 @@
 .interview__img-wrapper {
   overflow: hidden;
   height: 960px;
-  margin-top: -180px;
+  margin-top: -177px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,6 +174,10 @@
   padding-left: 85px;
   max-width: 535px;
   box-sizing: border-box;
+}
+
+.interview__img {
+  background-color: #ccc;
 }
 
 .interview__text {
@@ -247,6 +257,12 @@
   color: $orange;
   font-size: 16px;
   cursor: pointer;
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $orange-light;
+  }
 }
 
 .blog {
@@ -330,6 +346,12 @@
   display: block;
   cursor: pointer;
   margin-bottom: 52px;
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $orange-light;
+  }
 }
 
 .reviews {
